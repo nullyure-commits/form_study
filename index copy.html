@@ -1,0 +1,49 @@
+<!doctype html>echo "# form_study" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nullyure-commits/form_study.git
+git push -u origin main
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입력 양식 작성하기</title>
+  </head>
+  <body>
+    <!-- 폼을 만드는 태그 -->
+    <form>
+      <!-- 기본 정보 영역 -->
+      <fieldset>
+        <legend>기본 정보</legend>
+        <!-- 아이디 입력창 -->
+        <p>
+          <label for="userid">아이디</label>
+          <input type="text" id="userid" />
+        </p>
+
+        <!-- 비밀번호 입력창 -->
+        <div>
+          <label for="passwd">비밀번호</label>
+          <input type="password" id="passwd" />
+        </div>
+      </fieldset>
+      <!-- 선택 정보 영역 -->
+      <fieldset>
+        <legend>선택 정보</legend>
+        <!-- 나이 : type-number -->
+         <p>
+            <label for="25">나이</label>
+            <input type="나이" id="25">
+         </p>
+
+        <!-- 추천인 : type - text  -->
+         <div>
+            <label for="서보영">추천인</label>
+            <input type="추천인" id="서보영">
+         </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
